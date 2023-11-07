@@ -216,17 +216,22 @@ button {
 }
 
 
-/* header section start */
-
 .header_section {
     width: 100%;
     float: left;
     background-image: url('../images/cover.jpg');
     height: auto;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     border-radius: 0% 0% 95% 95% / 0% 0% 10% 10%;
+}
+
+@media screen and (max-width: 720px) {
+    /* Desktop: 4 items at a time */
+    .header_section {
+        background-image: url('../images/about-4.jpg');
+    }
 }
 
 .header_bg {
@@ -462,18 +467,6 @@ a.navbar-brand {
     text-align: center;
 }
 
-#banner_slider a.carousel-control-prev {
-    left: initial;
-    top: 180px;
-    right: -14px;
-    color: #ffffff;
-    background-color: #001431;
-}
-
-#banner_slider a.carousel-control-next {
-    right: -14px;
-    top: 120px;
-}
 
 #banner_slider .carousel-control-next,
 #banner_slider .carousel-control-prev {
@@ -1690,4 +1683,57 @@ footer {
   footer .under-footer a:hover {
     color: #c66;
   }
+  .top-categories {
+    margin-top: -100px;
+  }
   
+  .top-categories .item {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+  }
+  
+  .top-categories .item .icon {
+    background-color: #f7f7f7;
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 10px;
+  }
+  
+  .top-categories .item .icon img {
+    max-width: 36px;
+    border-radius: 0px;
+  }
+  
+  .top-categories .item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .top-categories .item span {
+    font-size: 15px;
+    color: #afafaf;
+    display: block;
+  }
+  
+  .top-categories .item span.counter {
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 8px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #00bdfe;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 6%);
+    margin-right: 10px;
+  }
