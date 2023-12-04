@@ -2400,7 +2400,6 @@ footer .logo {
 
 .blog-item .blog-content {
     position: relative;
-    transform: translateY(-30%);
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     border-radius: 10px;
 }

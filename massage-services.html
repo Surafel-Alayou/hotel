@@ -14,6 +14,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta property="og:title" content="God's bridge hotel and spa" />
+    <meta property="og:site_name" content="God's bridge hotel and spa" />
     <link rel="icon" href="images/favicon.png"/>
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -25,12 +27,16 @@
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
     <!-- font css -->
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 </head>
 <body>
+    <div id="mypreloader">
+        <img src="images/Ripple.gif" alt="preloader image" width="100" height="100">
+     </div>
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -70,17 +76,14 @@
     
     <div class="container-fluid blog py-6 ">
         <div class="container mb-0">
-            <div class="col-12">
+            <div class="col-12 mb-3">
                 <h1 class="customer_taital mt-3">Massage services</h1>
                 <p class="col-sm-10 col-md-7 mx-auto mb-5">
                     Discover a world of flavors at our hotel's restaurant, where international and local cuisines harmoniously combine. Enjoy!</p>
                 </div>
-                <div class="row gx-4 justify-content-center">
+                <div class="row gx-4 justify-content-center mb-5">
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                         <div class="blog-item">
-                            <div class="overflow-hidden rounded">
-                                <img src="images/relaxation-massage.png" class="img-fluid w-100" alt="">
-                            </div>
                             <div class="blog-content mx-4 desc-box" >
                                 <div class="text-dark rounded-start" >
                                     <div class="h-100 p-3 justify-content-center text-center desc-box-header" >
@@ -93,9 +96,6 @@
                     </div>
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
                         <div class="blog-item">
-                            <div class="overflow-hidden rounded">
-                                <img src="images/signature-spa-massage.png" class="img-fluid w-100" alt="">
-                            </div>
                             <div class="blog-content mx-4 desc-box" >
                                 <div class="text-dark rounded-start" >
                                     <div class="h-100 p-3 justify-content-center text-center desc-box-header" >
@@ -108,9 +108,6 @@
                     </div>
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
                         <div class="blog-item">
-                            <div class="overflow-hidden rounded">
-                                <img src="images/couples-massage.png" class="img-fluid w-100" alt="">
-                            </div>
                             <div class="blog-content mx-4 desc-box" >
                                 <div class="text-dark rounded-start" >
                                     <div class="h-100 p-3 justify-content-center text-center desc-box-header" >
@@ -122,12 +119,10 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row gx-4 justify-content-center">
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                         <div class="blog-item">
-                            <div class="overflow-hidden rounded">
-                                <img src="images/aromatherapy-massage.png" class="img-fluid w-100" alt="">
-                            </div>
                             <div class="blog-content mx-4 desc-box" >
                                 <div class="text-dark rounded-start" >
                                     <div class="h-100 p-3 justify-content-center text-center desc-box-header" >
@@ -140,9 +135,6 @@
                     </div>
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
                         <div class="blog-item">
-                            <div class="overflow-hidden rounded">
-                                <img src="images/hotel-suite-massage.png" class="img-fluid w-100" alt="">
-                            </div>
                             <div class="blog-content mx-4 desc-box" >
                                 <div class="text-dark rounded-start" >
                                     <div class="h-100 p-3 justify-content-center text-center desc-box-header" >
@@ -155,9 +147,6 @@
                     </div>
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
                         <div class="blog-item">
-                            <div class="overflow-hidden rounded">
-                                <img src="images/hot-stone-massage.png" class="img-fluid w-100" alt="">
-                            </div>
                             <div class="blog-content mx-4 desc-box" >
                                 <div class="text-dark rounded-start" >
                                     <div class="h-100 p-3 justify-content-center text-center desc-box-header" >
@@ -223,7 +212,14 @@
             </div>
         </footer>
         
-        <!-- Javascript files-->
+        
+        <script>
+            var loader = document.getElementById("mypreloader");
+            window.addEventListener("load", function(){
+               
+               loader.style.display = "none";
+            })
+         </script>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
