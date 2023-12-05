@@ -369,7 +369,7 @@
                                        
                                     </div>
                                     <div class="d-flex mx-auto" style="justify-content: center;">
-                                       <a href="#" class="btn btn-sm btn-primary px-3 mb-3 border-end btn-large pr-4 pl-4" style="border-radius: 30px 30px 30px 30px; border: none; background-color: #fec200; color: #303030">See more</a>
+                                       <a href="#" class="btn btn-sm btn-secondary px-3 mb-3 border-end btn-large pr-4 pl-4" style="border-radius: 30px 30px 30px 30px; border: none;  ">See more</a>
                                     </div>
                                  </div>
                                  
@@ -416,8 +416,8 @@
                                                 </div>
                                                 <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                                                 <div class="d-flex justify-content-center mb-2">
-                                                   <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">View Details</a>
-                                                   <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                                   <a href="room-details.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px;">View Details</a>
+                                                   
                                                 </div>
                                              </div>
                                           </div>
@@ -447,8 +447,7 @@
                                                 </div>
                                                 <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                                                 <div class="d-flex justify-content-center mb-2">
-                                                   <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">View Details</a>
-                                                   <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                                   <a href="room-details.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px;">View Details</a>
                                                 </div>
                                              </div>
                                           </div>
@@ -478,8 +477,7 @@
                                                 </div>
                                                 <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                                                 <div class="d-flex justify-content-center mb-2">
-                                                   <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">View Details</a>
-                                                   <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                                   <a href="room-details.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px;">View Details</a>
                                                 </div>
                                              </div>
                                           </div>
@@ -499,7 +497,7 @@
                                           <p>commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint. 
                                              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</p>
                                              <div class="d-flex mb-5">
-                                                <a href="#" class="btn btn-sm btn-primary px-3 border-end btn-large pr-4 pl-4 " style="border-radius: 30px 30px 30px 30px; border: none;">Explore more</a>
+                                                <a href="massage-services.html" class="btn btn-sm btn-primary px-3 border-end btn-large pr-4 pl-4 " style="border-radius: 30px 30px 30px 30px; border: none;">Explore more</a>
                                              </div>
                                           </div>
                                        </div>
@@ -743,15 +741,15 @@
                                           let currentIndex = 0;
                                           
                                           function showSlide(index) {
-                                             if (index < 0) {
-                                                index = 0;
-                                             } else if (index >= foodSliderItems.length - getVisibleItemCount()) {
-                                                index = foodSliderItems.length - getVisibleItemCount();
-                                             }
-                                             
+                                             const totalItemCount = foodSliderItems.length;
+                                           
+                                             // Ensure the index is within a valid range
+                                             index = (index + totalItemCount) % totalItemCount;
+                                           
                                              foodSliderSlide.style.transform = `translateX(-${index * (100 / getVisibleItemCount())}%)`;
                                              currentIndex = index;
-                                          }
+                                           }
+                                           
                                           
                                           function getVisibleItemCount() {
                                              if (window.innerWidth >= 1024) {
