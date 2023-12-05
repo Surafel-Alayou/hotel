@@ -2419,8 +2419,8 @@ section.get-info .left-image {
   }
   
   section.get-info .info-item {
+    align-items: center;
     border-radius: 15px;
-    text-align: left;
     padding: 60px 30px 30px 30px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
     position: relative;
@@ -2428,7 +2428,7 @@ section.get-info .left-image {
   
   section.get-info .info-item .icon {
     position: absolute;
-    left: 30px;
+    
     top: -30px;
     width: 80px;
     height: 80px;
