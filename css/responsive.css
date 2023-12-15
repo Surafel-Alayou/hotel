@@ -271,11 +271,8 @@
     a.navbar-brand {
         width: auto;
     }
-    .header_section {
-        background: #001431;
-    }
     .navbar-toggler {
-        background-color: #fff;
+        background-color: #ffffff;
         border: 1px solid #fff;
     }
     .navbar {
@@ -389,9 +386,6 @@
     }
     a.navbar-brand {
         width: auto;
-    }
-    .header_section {
-        background: #001431;
     }
     .navbar-toggler {
         background-color: #fff;
