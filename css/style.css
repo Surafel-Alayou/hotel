@@ -1,8 +1,3 @@
-/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
 @import url(animate.min.css);
 @import url(normalize.css);
 @import url(icomoon.css);
@@ -15,7 +10,6 @@
 @import url(jquery-ui.css);
 @import url(nice-select.css);
 
-/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 :root {
     --color-default: #222222;
     --color-primary: #303030;
@@ -300,70 +294,6 @@ a.navbar-brand img{
 
 .navbar {
     padding: 15px 15px;
-}
-
-/* header section end */
-.foodSlider-container {
-    width: 100%;
-    background-image: url('../images/curvy-background.jpg');
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    padding: 5%px 3% 0% 3%;
-    height: fit-content;
-}
-.foodSlider-slide {
-    display: flex;
-    transition: transform 0.9s ease-in-out;
-}
-.foodSlider-item {
-    width: 100%; /* Default for mobile */
-    min-width: 100%;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    padding: 3%;
-    box-sizing: border-box;
-}
-.foodSlider-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    display: none;
-}
-.foodSlider-control {
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    border-radius: 50%; /* Make it circular */
-    padding: 10px;
-    font-size: 24px;
-    margin: 0 10px; /* Add some spacing */
-    user-select: none; /* Prevent text selection */
-}
-.foodSlider-control:hover {
-    background-color: #555; /* Darken on hover */
-}
-
-/* Media queries for different screen sizes */
-
-@media screen and (min-width: 768px) {
-    /* Tablet: 2 items at a time */
-    .foodSlider-item {
-        width: 50%;
-        min-width: 50%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    /* Desktop: 4 items at a time */
-    .foodSlider-item {
-        width: 25%;
-        min-width: 25%;
-    }
 }
 
   
@@ -1821,7 +1751,6 @@ small.rooms-home{
     font-size: 20px;
 }
 .services-section {
-    padding-bottom: 60px;
     border-top: 1px solid #e5e5e5;
 }
 .services-section .section-title {
@@ -1833,11 +1762,8 @@ small.rooms-home{
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    background-color: white;
 }
-.service-item:hover {
-    transform: scale(1.1);
-}
+
 .service-item i {
     display: inline-block;
     color: #dfa974;
@@ -1971,7 +1897,7 @@ p.copyright a {
     .main-banner .right-image {
         margin-left: 0px;
     }
-    section.our-courses ul.nacc {
+    section.our-foods ul.nacc {
         margin-left: 0px !important;
     }
     section.simple-cta {
@@ -2474,7 +2400,7 @@ section.about-detail .left-image {
   section.our-team:before {
     position: absolute;
     content: '';
-    background-image: url(../images/our-courses-left-dec.png);
+    background-image: url(../images/our-foods-left-dec.png);
     left: 45px;
     top: -140px;
     width: 291px;
@@ -2485,7 +2411,7 @@ section.about-detail .left-image {
   section.our-team:after {
     position: absolute;
     content: '';
-    background-image: url(../images/our-courses-right-dec.png);
+    background-image: url(../images/our-foods-right-dec.png);
     right: 45px;
     top: -140px;
     width: 291px;
@@ -2822,7 +2748,7 @@ section.about-detail .left-image {
     z-index: 2;
   }
   
-  #contact-form input {
+  #contact-form input,  #contact-form select{
     width: 100%;
     height: 50px;
     border-radius: 25px;
@@ -2832,7 +2758,6 @@ section.about-detail .left-image {
     font-weight: 300;
     padding: 0px 20px;
     font-size: 14px;
-    color: #fff;
     margin-bottom: 30px;
     position: relative;
     z-index: 3;
@@ -2861,3 +2786,139 @@ section.about-detail .left-image {
   #contact-form textarea::placeholder {
     color: #000000;
   }
+  
+section.our-foods {
+    width: 100%;
+    background-image: url('../images/curvy-background.jpg');
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    padding-bottom: 130px;
+  }
+  .our-foods .item {
+    width: 75%;
+    margin: auto;
+  }
+  .our-foods .item img{
+    border-radius: 50%;
+    border: solid white 3px;
+  }
+  .our-foods .item .down-content {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+  
+  .our-foods .owl-nav {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-45px);
+  }
+      
+  .our-foods .owl-nav .owl-prev{
+    margin-right: 10px;
+    outline: none;
+    position: absolute;
+    left: -80px;
+  }
+  
+  .our-foods .owl-nav .owl-prev span,
+  .our-foods .owl-nav .owl-next span {
+    opacity: 0;
+  }
+  
+  .our-foods .owl-nav .owl-prev:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #1e1e1e;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f104';
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+  }
+  
+  .our-foods .owl-nav .owl-prev {
+    opacity: 1;
+    transition: all .5s;
+  }
+  
+  .our-foods .owl-nav .owl-prev:hover {
+    opacity: 0.9;
+  }
+  
+  .our-foods .owl-nav .owl-next {
+    opacity: 1;
+    transition: all .5s;
+  }
+  
+  .our-foods .owl-nav .owl-next:hover {
+    opacity: 0.9;
+  }
+  
+  .our-foods .owl-nav .owl-next{
+    margin-left: 10px;
+    outline: none;
+    position: absolute;
+    right: -85px;
+  }
+  
+  .our-foods .owl-nav .owl-next:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #1e1e1e;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f105';
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+  }
+  
+
+@media (max-width: 1300px) {
+    .our-foods .owl-nav .owl-next{
+      right: -30px;
+    }
+    .our-foods .owl-nav .owl-prev{
+      left: -25px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .our-foods .owl-nav .owl-next{
+      right: -70px;
+    }
+    .our-foods .owl-nav .owl-prev{
+      left: -65px;
+    }
+  }
+  
+  @media (max-width: 1085px) {
+    .our-foods .owl-nav .owl-next{
+      right: -30px;
+    }
+    .our-foods .owl-nav .owl-prev{
+      left: -25px;
+    }
+  }
+  
+  @media (max-width: 1005px) {
+    .our-foods .owl-nav .owl-next{
+      display: none;
+    }
+    .our-foods .owl-nav .owl-prev{
+      display: none;
+    }
+  }
+ 
